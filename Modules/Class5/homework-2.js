@@ -35,7 +35,7 @@
   * 6. word 'BoDy' is present only once. (true or false)
   */
 
-  const sentence3 = "HeAlTh wAs BoDy BoDy BoDy EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+  const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
 
   console.log(sentence3.length);
 
@@ -48,6 +48,8 @@
   console.log(sentence3.charAt(sentence3.length-1));
 
   console.log(sentence3.match(/BoDy/ig).length < 2);
+
+  console.log(sentence3.substring(20,10));
 
 
 
