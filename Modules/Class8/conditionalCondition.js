@@ -227,7 +227,7 @@ if (dayName.localeCompare('mon') === 0 || dayName.localeCompare('wed') === 0 || 
 console.log('\nAnother solution - ends\n');
 
 
-const sports = ['football', 'Soccer', 'Baseball' , 'Rugby', 'Tennis'];
+const sports = ['football', 'Soccer', 'Baseball' , 'Rugby', 'Tennis', 'swimming'];
 
 // if 'swimming' is not present in the array, add it.
 // if already present then print the index at which it is present
