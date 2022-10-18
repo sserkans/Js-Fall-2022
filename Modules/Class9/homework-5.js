@@ -8,8 +8,15 @@
  * [1, 2, 1, 1, 3, 1, 2] -> 11/7 -> 1.xxx
  * 
  */
- let numbers = [23, 12, 43, 10, 5, -10];
+ let numbers = [1, 2, 1, 1, 3, 1, 2];
 
+ let total = 0;
+
+ for (i=0; i< numbers.length; i++){
+    total += numbers[i];
+ }
+ let avg = total / numbers.length;
+ console.log(avg);
 
  /**
   * Q2. Reverse a given string (word by word)
@@ -22,8 +29,14 @@
   */
  let str2 = 'have a great day'   // day great a have
  let reverseStr2 = '';
- // code
- console.log(`reverseStr2 -> ${reverseStr2}`);   // day great a have
+ let reverseStr3 = [];
+ let newArr = str2.split(' ');
+
+ for (let i = newArr.length-1; i >= 0; i--){
+    reverseStr3[newArr.length-1-i] = newArr[i];
+ }
+ console.log(`reverseStr2 -> ${reverseStr3.join(' ')}`);   // day great a have
+ 
  
  
  /**
@@ -34,7 +47,12 @@
   * 'good Morning' -> 'GM'
   * 'hello dear, how are you doing?' -> HDHAYD
   */
- let str3 = 'good Morning';
+ let str3 = 'hello dear, how are you doing?';
  let abbr = '';
- // code
+ 
+ let str3toArr = str3.split(' ');
+ for ( i=0; i < str3toArr.length ; i++){
+    let char = str3toArr[i].substring(0,1);
+    abbr += char.toUpperCase();
+ }
  console.log(`abbr -> ${abbr}`);
