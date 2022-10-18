@@ -75,27 +75,27 @@
  * 
  */
 
-    let studentScore = 93;
+    let studentScore = 63.99;
     let maxScore = 100;
 
     let gradePercentage = (studentScore/maxScore) * 100;
         
-       if (maxScore < studentScore){
+       if (maxScore < studentScore || studentScore < 0){
             console.log("Invalid student score");
         }
-        else if (gradePercentage <= 100 && gradePercentage >= 91){
+        else if (gradePercentage >= 91){
             console.log(`Your percentage is ${gradePercentage} and your Grade is A`);
         }
-        else if (gradePercentage <= 90.99 && gradePercentage >= 81){
+        else if (gradePercentage >= 81){
             console.log(`Your percentage is ${gradePercentage} and your Grade is B`);
         }
-        else if (gradePercentage <= 80.99 && gradePercentage >= 71){
+        else if (gradePercentage >= 71){
             console.log(`Your percentage is ${gradePercentage} and your Grade is C`);
         }
-        else if (gradePercentage <= 70.99 && gradePercentage >= 61){
+        else if (gradePercentage >= 61){
             console.log(`Your percentage is ${gradePercentage} and your Grade is D`);
         }
-        else if (gradePercentage <= 60.99 && gradePercentage >= 51){
+        else if (gradePercentage >= 51){
             console.log(`Your percentage is ${gradePercentage} and your Grade is E`);
         }
         else {
@@ -146,3 +146,17 @@ else {console.log(myNumber)
 
 
 
+ 
+
+/*let i = 0;
+
+ while ( i < sports1.length){
+    if (sports1[i].toLowerCase().includes('o') || sports1[i].length > 5 && sports1[i].length < 10){
+        console.log(sports1[i]);
+    }
+    i++
+ }*/
+
+
+   
+   
