@@ -127,20 +127,22 @@ if (student1_2.anyExperience){
  */
 let favSports_1 = ['Football', 'Soccer', 'Fishing', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
 
-let favSports_2 = ['Football', 'Soccer', 'BaseBall', 'Ping pong', 'Rugby', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
+let favSports_2 = ['Football', 'Soccer', 'BaseBall', 'BaseBall','BaseBall', 'Ping pong', 'Rugby', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
 
-let favSports_3 = ['Football', 'Soccer', 'Baseball', 'Fishing', 'Baseball', 'Ping pong', 'Baseball', 'Rugby', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
+let favSports_3= ['Football', 'Soccer','BaseBall', 'Baseball', 'Fishing', 'Baseball', 'Ping pong', 'Baseball', 'Rugby', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
+
+            
+let numOfWord = 0;
+for ( i = 0 ; i < favSports_3.length; i++)
+            if (favSports_3[i].toLowerCase() == 'baseball'){
+                numOfWord+=1;
+                if( numOfWord >= 2){
+                    console.log(`Baseball has second occurrence at index ${i}`);
+                    break;
+                } 
+            }
 
 
-let occ = 0;
-for ( const sName of favSports_1){
-    
-   
-    
-         
-    
-       
-}
 
 
 
@@ -217,37 +219,3 @@ if (student3_2.anyExperience){
    } 
 else 
    console.log(`${student3_2.name} has no experience`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

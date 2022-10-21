@@ -34,6 +34,7 @@
 
  for (let i = newArr.length-1; i >= 0; i--){
     reverseStr3[newArr.length-1-i] = newArr[i];
+    console.log(reverseStr3);
  }
  console.log(`reverseStr2 -> ${reverseStr3.join(' ')}`);   // day great a have
  

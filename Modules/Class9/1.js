@@ -21,17 +21,6 @@ for ( let i = 1; i <= 5 ; i++ ){
     }
 }
 
-let favSports = ['Football', 'Soccer', 'Baseball', 'Fishing', 'Baseball', 'Ping pong', 'Baseball', 'Rugby', 'BASKETBALL', 'Ping pong', 'Swimming', 'Running'];
 
-// find the index of First occurrence of 'BaseBall' (ignoring cases)
 
-let indexAns = 0;
-for ( i=0 ; i < favSports.length; i++){
-   
-    do {favSports[i].toLowerCase().localeCompare('baseball') === 0
-        indexAns = i 
-        indexAns++   
-    } while (indexAns < 2);
-       
-}
-console.log(indexAns);
+
