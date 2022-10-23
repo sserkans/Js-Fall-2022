@@ -21,6 +21,30 @@ for ( let i = 1; i <= 5 ; i++ ){
     }
 }
 
+function addNumbers (x,y){
+    return x+y
+}
+
+console.log(addNumbers(3,4))
+
+function reversedString(userInputString) {
+    let newString = "";
+    for (var i = userInputString.length - 1; i >= 0; i--) {
+        newString += userInputString[i];
+    }
+    return newString;
+}
+console.log(reversedString('hell'))
 
 
+function abbrSentence (stringGiven) {
+    let abbr = '';
+    let strtoArr = stringGiven.split(' ');
+ for ( i=0; i < strtoArr.length ; i++){
+    let char = strtoArr[i].substring(0,1);
+    abbr += char.toUpperCase();
+ }
+ return abbr;
+}
 
+console.log(abbrSentence('hello dear, how are you doing?'));

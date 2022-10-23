@@ -142,10 +142,6 @@ for ( i = 0 ; i < favSports_3.length; i++)
                 } 
             }
 
-
-
-
-
 /**
  * Q3. Print the total number of past experience for a student
  * 

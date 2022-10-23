@@ -12,7 +12,7 @@
 
  let total = 0;
 
- for (i=0; i< numbers.length; i++){
+ for (i=0; i<  numbers.length; i++){
     total += numbers[i];
  }
  let avg = total / numbers.length;
@@ -57,3 +57,7 @@
     abbr += char.toUpperCase();
  }
  console.log(`abbr -> ${abbr}`);
+
+
+
+ 
