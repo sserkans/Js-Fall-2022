@@ -97,7 +97,7 @@
         console.log(newName); 
     }
     for ( let j = 0; j < newName.length; j++){
-       nameTitleCase += newName[j].split().charAt(0).toUpperCase() + newName[j].slice(1) + ' '
+       nameTitleCase += newName[j].charAt(0).toUpperCase() + newName[j].slice(1) + ' '
         console.log(nameTitleCase);
 
     }  

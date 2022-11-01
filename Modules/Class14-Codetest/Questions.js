@@ -202,7 +202,7 @@ console.log(updateStudentRecord2_1);
 // const updateStudentRecord2_2 = titleCaseAllStudentNames(allStudentData2_2)
 // console.log(updateStudentRecord2_2);
 // /**
- * 
+/* * 
  *      {
  *          id: 1,
  *          name: 'Leo',
@@ -280,7 +280,7 @@ updateFirstName(6, 'sole', allStudentRecords_3);
     // Invalid student id provided.
 
 updateFirstName(4, 'chess', allStudentRecords_3);
-    // Provided New firstName is same as of in the records, full name in the records: "chess GamE"
+    // Provided New firstName is same as of in the records, full name in the records: "chess GamE" 
 
 
 

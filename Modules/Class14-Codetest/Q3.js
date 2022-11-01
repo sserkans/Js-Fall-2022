@@ -42,12 +42,12 @@ let allStudentRecords_3 = [
 
 function updateFirstName(sId, newFirstName, studentRecords) {
     for (let i = 0 ; i < studentRecords.length; i++){
-        if (studentRecords[i].sId === sId && studentRecords[i].name.includes(newFirstName)){
+        if (studentRecords[i].id === sId && studentRecords[i].name.includes(newFirstName)){
             return `Provided ${newFirstName} is same as of in the records, full name in the records: ${studentRecords[i].name}`;
-        } else if ( studentRecords[i].sId === sId && studentRecords[i].name !== newFirstName){
+        } else if ( studentRecords[i].id === sId && studentRecords[i].name !== newFirstName){
             studentRecords[i].name = newFirstName;
             return `Your name is updated successfully, new full name in the records: ${newFirstName}`
-        } else if ( studentRecords[i].sId !== sId) {
+        } else if ( studentRecords[i].id !== sId) {
             return `Invalid student id provided.`
         } 
     }
