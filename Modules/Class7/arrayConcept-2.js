@@ -392,7 +392,7 @@
  const indexOf_plUtO = planets.indexOf('plUtO'); // 1
  console.log(`\nFirst occurrence of "plUtO" is at index -> ${indexOf_plUtO}`);
  
- const indexOf_EARTH = planets.indexOf('EARTH'); // -1
+ const indexOf_EARTH = planets.indexOf('EARTH'); // 10
  console.log(`\nFirst occurrence of "EARTH" is at index -> ${indexOf_EARTH}`);
  
  console.log(`\n\nplanets -> ${planets}`);

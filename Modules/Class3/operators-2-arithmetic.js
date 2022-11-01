@@ -84,11 +84,12 @@
  
  console.log('\n\nHaving fun!!');
  let myNum3=30;
- // console.log(myNum3++);          // 30   (printing and increment) -> (printing then increment value in myNum3)
+ console.log(myNum3++);          // 30   (printing and increment) -> (printing then increment value in myNum3)
      /**
       * console.log(myNum3);     // 30
       * myNum3++                 // 31
       */
+     
  console.log(++myNum3);          // 31   (printing and increment) -> (increment value in myNum3 then printing)
      /**
       * ++myNum3                 // 31

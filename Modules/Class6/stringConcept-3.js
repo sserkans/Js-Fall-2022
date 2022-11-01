@@ -21,8 +21,8 @@ console.log(`\nmyCity -> ${myCity}`);
  * 
  * return type: number
  */
-let stmt1 = 'hello World!';
-let stmt2 = 'Hello World!';
+let stmt1 = 'Hello World!';
+let stmt2 = 'hello World!';
 // to compare if stmt1 and stmt2 are equal  -> boolean
 stmt1 === stmt2
 
