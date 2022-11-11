@@ -42,14 +42,17 @@ let allStudentRecords_3 = [
 
 function updateFirstName(sId, newFirstName, studentRecords) {
     for (let i = 0 ; i < studentRecords.length; i++){
-        if (studentRecords[i].id === sId && studentRecords[i].name.includes(newFirstName)){
+        if( studentRecords[i].id != sId) {
+            return `Invalid student id provided.`
+            
+        } else if (studentRecords[i].id === sId && studentRecords[i].name.includes(newFirstName)){
             return `Provided ${newFirstName} is same as of in the records, full name in the records: ${studentRecords[i].name}`;
+            
         } else if ( studentRecords[i].id === sId && studentRecords[i].name !== newFirstName){
             studentRecords[i].name = newFirstName;
             return `Your name is updated successfully, new full name in the records: ${newFirstName}`
-        } else if ( studentRecords[i].id !== sId) {
-            return `Invalid student id provided.`
         } 
+     
     }
 }
     
@@ -74,12 +77,26 @@ console.log(updateFirstName(4, 'chess', allStudentRecords_3));
 
 
 
+    let sayac = 0;
 
+function login (username, password){
+    
+    let loginUsername = 'serkan';
+    let loginPassword = 1234;
+        if ( username === loginUsername && password === loginPassword){
+           console.log('Welcome to homepage'); 
+        } else {
+            if (sayac === 2){
+                console.log('Locked for 30 mins'); 
+            } else {
+                console.log('Try Again');   
+            }
+            sayac++;
+        }          
+} 
 
-
-
-
-
-
+login('serkn',1234);
+login('serkn',1234);
+login('serkn',1234);
 
 

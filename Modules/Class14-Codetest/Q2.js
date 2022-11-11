@@ -77,7 +77,7 @@
  *      }
  * ]
  **/
- let allStudentData_3 = [    
+ let allStudentData = [    
     {
        id: 1,
        name: 'haRrY poTteR',
@@ -88,22 +88,29 @@
    }
    
 ]
+    nameArr = []
+  for (sData of allStudentData){
+   nameArr.push(sData.name.toLowerCase().split())
+  }
 
- function titleCaseAllStudentNames(allStudentData) {
-    newName = [];
-    nameTitleCase = ''
-    for( let i=0; i<allStudentData.length;i++){
-        newName.push(allStudentData[i].name.toLowerCase().split(' '));
-        console.log(newName); 
+
+  console.log(nameArr);
+
+ //function titleCaseAllStudentNames(allStudentData) {
+    //newName = [];
+    //nameTitleCase = ''
+   /* for( let i=0; i<allStudentData.length;i++){
+        newName.push(allStudentData[i].name.toLowerCase().split(' '));  
     }
-    for ( let j = 0; j < newName.length; j++){
-       nameTitleCase += newName[j].charAt(0).toUpperCase() + newName[j].slice(1) + ' '
-        console.log(nameTitleCase);
-
+    for ( let i = 0; i < newName.length ; i++){
+        for ( let j =0 ; j<newName.length ; j++){
+           nameTitleCase += newName[i].charAt(0).toUpperCase() + newName[i].slice(1) + ' '
+        }
     }  
-
-}
-console.log(titleCaseAllStudentNames(allStudentData_3));
+    titleCaseArr = nameTitleCase.trim().split(' ')
+//}
+console.log(titleCaseArr);
+//console.log(titleCaseAllStudentNames(allStudentData_3));
 
 
 /*let allStudentData2_1 = [

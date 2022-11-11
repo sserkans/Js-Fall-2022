@@ -73,6 +73,7 @@ console.log(reverseStringByWord('have a great day'));
 
  function titleCase (givenString){
     givenArr = givenString.toLowerCase().split(' ');
+    console.log(givenArr);
     sentenceTitleCase = '';
     for (var i = 0; i < givenArr.length; i++){
         sentenceTitleCase += givenArr[i].charAt(0).toUpperCase() + givenArr[i].slice(1) + ' '
